@@ -1,0 +1,41 @@
+@charset "utf-8";
+h1 {
+text-align: center;  
+color: rgb(62, 180, 141);
+}
+
+body {
+  background-color: #eeeeee;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+}
+
+h3 {
+border-left: 10px solid ;
+color: rgb(62, 180, 141);
+padding-left: 10px;
+margin-left: 10px;
+}
+
+p {
+  margin-left: 10px;
+}
+@media screen and (max-width: 400px){
+  ul {
+    flex-direction: column;
+    justify-content: ;
+    margin: 0;
+    width: 100%;
+  }
+}
