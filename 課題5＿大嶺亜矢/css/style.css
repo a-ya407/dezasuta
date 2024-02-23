@@ -143,13 +143,15 @@ h3 {
 .info li {
   display: flex;
   gap: 55px;
-  line-height: 1.95;
   font-size: 23px;
   max-width: 700px;
   margin: 0 auto;
 }
 .info-text {
   text-decoration-line: underline;
+}
+.info p {
+  line-height: 1.95;
 }
 #access {
   padding-top: 3%;
@@ -171,6 +173,7 @@ iframe {
 .footer-area {
   max-width: 1000px;
   display: flex;
+  gap: 60px;
   margin: 0 auto;
 }
 .item-info ul {
@@ -190,4 +193,132 @@ iframe {
   bottom: 20px;
   right: 20px;
   width: 125px;
+}
+.header_nav-sp {
+  display: none;
+}
+
+@media screen and (max-width: 1100px){
+  .header_nav{
+    display: none;
+  }
+.humburger {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  cursor: pointer;
+  }
+.humburger span{
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  top: 50%;
+  transition: 0.3s;
+}
+.humburger span::before{
+    position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  top: -10px;
+  transition: 0.3s;
+  }
+  .humburger span::after{
+    position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  bottom: -10px;
+  transition: 0.3s;
+  }
+}
+.open span{
+  background-color: transparent;
+}
+.open span::before{
+  transform: rotate(45deg);
+  top: 0;
+}
+.open span::after{
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+.header_nav-sp{
+  position: absolute;
+  background-color: #00000090;
+  width: 100%;
+  height: 100vh;
+}
+.header_nav-sp ul{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header_nav-sp li{
+  color: #fff;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+  "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+}
+.text {
+  font-size: 17px;
+  padding-top: 2.6% ;
+  padding-bottom: 1.4%;
+  max-width: 100%;
+}
+
+.text2 {
+  font-size: 38px;
+  padding: 1.4%; 
+}
+.text3 {
+  font-size: 16px;
+  padding-bottom: 8%;
+  letter-spacing: 0.1em;
+  line-height: 1.65;
+}
+
+@media screen and (max-width: 767px){
+  .aboutus {
+    display: none;
+  }
+  .title1 {
+    align-items: center;
+  }
+  .item {
+    text-align: center;
+    width: 375px;
+    height: 245px;
+  }
+
+  }
+  }#menu img{
+  display: none;
+}
+
+#menu ul {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.menu1{
+margin: 0 auto;
+}
+.info p {
+  flex-direction: column;
+}
+.item-info ul {
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }

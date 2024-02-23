@@ -6,6 +6,8 @@
   <title>DESIGN CAFE</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -26,9 +28,23 @@
       </ul>
     </nav>
     </div>
-    
+    <nav class="header_nav-sp">
+      <ul>
+        <li><a href="#Aboutus"></a>ABOUT US</li>
+        <li><a href="#Menu"></a>MENU</li>
+        <li><a href="#Gallery"></a>GALLERY</li>
+        <li><a href="#Event"></a>EVENT</li>
+        <li><a href="#Access"></a>ACCESS</li>
+      </ul>
+    </nav>
+  <div class="humburger">
+    <span></span>
+  </div>
     <div class="slider">
+      <picture>
+        <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
       <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+      </picture>
     </div>
   </header>
 
@@ -54,28 +70,54 @@
       </div>
     </section>
 
-  <div id="menu" class="wrapper">
+    <section class="aboutus-sp">
+      <div class="flex-item wrapper">
+        <div="aboutus-text">
+      <h2 class="title1">
+        <img src="./images/about_us@2x.png" alt="about us">
+      </h2>
+        <div class="item">
+          <img src="images/pc_about-100.jpg" alt="コーヒーの写真">
+        </div>
+      <p class="text4">私たちが提供する<br>こだわりのコーヒー</p>
+      <p class="text5">サービスを提供する上での想いや心がけていることなど、メッ<br>セージを文章で紹介します。サービスを提供する上での想い<br>や心がけていることなど、メッセージを文章で紹介します。サー<br>ビスを提供する上での想いや心がけていることなど、メッセー<br>ジを文章で紹介します。サービスを提供する上での想いや心<br>がけていることなど、メッセージを文章で紹介します。サービス<br>を提供する上での想いや心がけていることなど、メッセージを<br>文章で紹介します。</p>
+        </div>
+      </div>
+    </section>
+    
+    <div id="menu" class="wrapper">
       <h2 class="title1">
         <img src="images/menu@2x.png" alt="menu">
       </h2>
     <ul>
       <li>
-        <img src="images/pc_menu_drink-100.jpg " alt="drink">
+        <picture>
+          <source srcset="./images/drink_sp@2x-100.jpg" media="(max-width: 767px)">
+          <img src="images/pc_menu_drink-100.jpg " alt="drink">
+        </picture>
           <h3>Drink</h3>
       <p class="menu1" >ドリンクメニューの概要を100文字程度で<br>紹介します。素材やこだわりなどをアピー<br>ルしていきます。</p>
       </li>
       <li>
-        <img src="images/pc_menu_food-100.jpg" alt="food">
+        <picture>
+          <source srcset="./images/food_sp@2x-100.jpg" media="(max-width: 767px)">
+          <img src="images/pc_menu_food-100.jpg" alt="food">
+        </picture>
+        
           <h3>Food</h3>
           <p class="menu1" >ドリンクメニューの概要を100文字程度で<br>紹介します。素材やこだわりなどをアピー<br>ルしていきます。</p>
       </li>
       <li>
-        <img src="images/pc_menu_sweets-100.jpg" alt="sweets">
+        <picture>
+          <source srcset="./images/cake_sp@2x-100.jpg" media="(max-width: 767px)">
+          <img src="images/pc_menu_sweets-100.jpg" alt="sweets">
+        </picture>
           <h3>Sweets</h3>
       <p class="menu1">スイーツメニューの概要を100文字程度で<br>紹介します。素材やこだわりなどをアピールし<br>ていきます。</p>
       </li> 
     </ul>
-  </div>
+</div>
+
     <section id="gallery">
       <h2 class="title1">
         <img src="./images/gallery@2x.png" alt="gallery">
@@ -116,7 +158,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3249..556029944351!2d139.61885877577808!3d35.46578427265759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5qiq5rWc6aeF!5e0!3m2!1sja!2sjp!4v1708245308525!5m2!1sja!2sjp" max width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <footer id="designcafe">
-    <div class="=footer-area">
+    <div class="footer-area">
       <h2 class="title2">
         <img src="images/design_cafe_logo_footer@2x.png" alt="event">
       </h2>
@@ -136,5 +178,14 @@
           </a>
         </p>
     </footer>
+
+    <script>
+      $(function (){
+        $(".humburger").on("click", function(){
+          $(".humburger").toggleClass("open");
+          $(".header_nav-sp").fadeToggle();
+      });
+    });
+    </script>
 </body>
 </html>
