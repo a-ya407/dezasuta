@@ -286,24 +286,24 @@ iframe {
   letter-spacing: 0.1em;
   line-height: 1.65;
 }
+.aboutus-sp {
+  display: none;
+}
 
 @media screen and (max-width: 767px){
   .aboutus {
     display: none;
+  }
+  .aboutus-sp {
+    display: block;
   }
   .title1 {
     align-items: center;
   }
   .item {
     text-align: center;
-    width: 375px;
-    height: 245px;
+    width:100%
   }
-
-  }
-  }#menu img{
-  display: none;
-}
 
 #menu ul {
     flex-direction: column;
@@ -316,6 +316,9 @@ margin: 0 auto;
 }
 .info p {
   flex-direction: column;
+}
+span {
+  display: inline-block
 }
 .item-info ul {
   flex-direction: column;
