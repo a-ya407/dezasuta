@@ -8,9 +8,11 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
 </head>
 
 <body>
@@ -67,7 +69,7 @@
         <div class="item">
           <img src="images/pc_about-100.jpg" alt="コーヒーの写真">
         </div>
-      <div="aboutus-text">
+      <div class="aboutus-text">
       <h2 class="title1">
         <img src="./images/about_us@2x.png" alt="about us">
       </h2>
@@ -130,14 +132,32 @@
       <h2 class="title1">
         <img src="./images/gallery@2x.png" alt="gallery">
       </h2>
-    <div class="slider2">
-      <ul>
-        <li><img src="images/pc_gallary_05-100.jpg" alt="店内の写真1"></li>
-        <li><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆の写真"></li>
-        <li><img src="images/pc_gallary_03-100.jpg" alt="店内の写真2"></li>
-        <li><img src="images/pc_gallary_02-100.jpg" alt="CAFE文字の写真"></li>
-        <li><img src="images/pc_gallary_01-100.jpg" alt="カフェラテの写真"></li>
-        <li><img src="images/pc_gallary_01-100.jpg" alt="カフェラテの写真"></li>       
+    <div>
+      <ul class="slider2">
+        <li><a href="images/pc_gallary_05-100.jpg"data-lightbox="cafe">
+            <img src="images/pc_gallary_05-100.jpg" alt="店内の写真1">
+            </a>
+        </li>
+        <li><a href="images/pc_gallary_04-100.jpg"data-lightbox="cafe">
+            <img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆の写真">
+            </a>
+        </li>
+        <li><a href="images/pc_gallary_03-100.jpg"data-lightbox="cafe">
+            <img src="images/pc_gallary_03-100.jpg" alt="店内の写真2">
+            </a>
+        </li>
+        <li><a href="images/pc_gallary_02-100.jpg"data-lightbox="cafe">
+            <img src="images/pc_gallary_02-100.jpg" alt="CAFE文字の写真">
+            </a>
+        </li>
+        <li><a href="images/pc_gallary_01-100.jpg"data-lightbox="cafe">
+            <img src="images/pc_gallary_01-100.jpg" alt="カフェラテの写真">
+            </a>
+        </li>
+        <li><a href="images/pc_gallary_01-100.jpg"data-lightbox="cafe">
+            <img src="images/pc_gallary_01-100.jpg" alt="カフェラテの写真">
+            </a>
+        </li>       
       </ul>
     </div>
     </section>
@@ -224,10 +244,18 @@
     $(function(){
       $(".slider2").slick({
         autoplay: true,
-        arrows: false,
-        dots: true
+        arrows: true,
+        slidesToShow: 5, //表示するスライド数を設定する
+          slidesToScroll: 1 //スクロールするスライド数を設定する
       });
     });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" 
+    integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
 </body>
 </html>

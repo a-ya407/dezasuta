@@ -65,11 +65,15 @@ section p {
   line-height: 1.62;
 }
 .item {
+  width: 50%;
   padding-right: 8%;
 }
 .aboutus {
   padding-bottom: 8%;
   align-items: center;
+}
+.aboutus-text{
+  width: 50%;
 }
 .aboutus .flex-item {
   display: flex;
@@ -318,10 +322,21 @@ iframe {
 margin: 0 auto;
 }
 .info p {
-  flex-direction: column;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.info ul{
+margin: 0 10px;
+}
+.info li{
+  display: block;
+  padding: 0 16px;
+  font-size: 16px;
 }
 span {
-  display: inline-block
+  display: block
 }
 .item-info ul {
   flex-direction: column;
@@ -329,7 +344,9 @@ span {
   margin: 0 auto;
 }
 }
-
+.footer-area{
+  flex-direction: column;
+}
 .slick-dots {
   bottom: 0;
 }
