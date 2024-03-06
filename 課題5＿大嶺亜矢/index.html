@@ -12,7 +12,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" 
+  integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
 </head>
 
 <body>
@@ -222,7 +224,7 @@
         </p>
     </footer>
 
-    
+    <!-- ハンバーガーメニュー -->
     <script>
       $(function (){
         $(".humburger").on("click", function(){
@@ -234,8 +236,8 @@
     //スライダー
     $(function(){
       $(".slider").slick({
-        autoplay: true,
-        autoplaySpeed: 2000,
+        autoplay: true,//自動的にスライドを動かす
+        autoplaySpeed: 2000,//動く秒数
         arrows: false,
         dots: true
       });
@@ -244,18 +246,35 @@
     $(function(){
       $(".slider2").slick({
         autoplay: true,
-        arrows: true,
         slidesToShow: 5, //表示するスライド数を設定する
-          slidesToScroll: 1 //スクロールするスライド数を設定する
+        slidesToScroll: 1 //スクロールするスライド数を設定する
       });
     });
+
+    // レスポンシブ一枚ずつの表示
+    var windowWidth = window.innerWidth;
+
+    if (windowWidth > 767) {
+      $('.slider2').slick({
+        autoplaySpeed: 2000,
+        autoplay: true,
+        isFinite: true
+        slidesToShow: 5,
+        slidesToScroll: 1
+      });
+      }
+    
+    else {
+      $('slider2').slick({
+        autoplaySpeed: 2000,
+        autoplay: true,
+        isFinite:true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      })
+      }
+
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" 
-    integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
 </body>
 </html>
