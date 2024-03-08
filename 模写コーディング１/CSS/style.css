@@ -1,0 +1,87 @@
+@charset "utf-8";
+#header img{
+  width: 120px;
+  max-width: 100%;
+}
+#header{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 12%;
+}
+#header ul{
+  display: flex;
+  gap: 30px;
+  padding-top: 10px;
+  padding-right: 120px;
+}
+a {
+  text-decoration-line: none; /*テキストの下線を無しにする*/
+}
+li {
+  list-style: none;
+}
+.main img {
+  max-width: 1920px;
+  height: 600px;
+  width: 100%;
+  height: auto;/*画像の縦横比を維持して大きくなる*/
+  padding-bottom: 8%;
+}
+
+#about h2 {
+  text-align: center;
+  text-decoration-line: underline;
+}
+h3 {
+  display: flex;
+}
+.flex-item {
+  display: flex; 
+}
+#about .wrap{
+display: flex;
+justify-content: center;
+align-items: center;/*flexのアイテムを中央揃え*/
+}
+#about img{
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.about text{
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.bicycle h2{
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 5%;
+}
+.bicycle ul{
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 0;
+}
+.bicycle h2{
+  padding-top: -20px;
+}
+.bicycle li{
+text-align: center;
+width: 100%;
+}
+.footer p{
+  text-align: center;
+  padding-top: 15%;
+}
+
+@media screen and (max-width: 767px){
+  .bicycle ul{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,19 @@
+$green: rgb(90, 221, 90)
+$mainColor: #000;
+
+h1{
+  color: red;
+  span{
+    color: $green;
+    background-color: $mainColor;
+  }
+  &:hover{
+    color: blueviolet;
+  }
+  @media screen and (max-width:767px){
+    color: $green;
+    span{
+      color: aqua;
+    }
+  }
+}
