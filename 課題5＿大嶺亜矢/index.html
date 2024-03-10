@@ -244,36 +244,31 @@
     });
 
     $(function(){
-      $(".slider2").slick({
-        autoplay: true,
-        slidesToShow: 5, //表示するスライド数を設定する
-        slidesToScroll: 1 //スクロールするスライド数を設定する
-      });
-    });
-
     // レスポンシブ一枚ずつの表示
     var windowWidth = window.innerWidth;
 
     if (windowWidth > 767) {
-      $('.slider2').slick({
-        autoplaySpeed: 2000,
-        autoplay: true,
-        isFinite: true
-        slidesToShow: 5,
-        slidesToScroll: 1
-      });
-      }
-    
-    else {
-      $('slider2').slick({
-        autoplaySpeed: 2000,
-        autoplay: true,
-        isFinite:true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
-      }
+    $('.slider2').slick({
+    autoplaySpeed: 2000,
+    arrows: false,
+    autoplay: true,
+    isFinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1
+    });
+    }
 
+    else {
+    $('.slider2').slick({
+    autoplaySpeed: 2000,
+    arrows: false,
+    autoplay: true,
+    isFinite:true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+    });
+    }
+    });
     </script>
 
 </body>
