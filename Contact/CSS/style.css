@@ -1,0 +1,69 @@
+@charset"utf-8";
+img{
+  width: 100%;
+}
+.contact{
+  width: 33%;
+  padding-top: 180px;
+  max-width: 1366px;
+}
+.line{
+  height: 18px;
+  width: 474px;
+  background-color: #ff801e;
+}
+h1{
+  font-size: 36px;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  text-align: center;
+  color: #252625;
+}
+.contact_text{
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 7%;
+  line-height: 1.7;
+  color: #252625;
+}
+.inquiry_item{
+padding-bottom: 6%;
+padding-left: 15%;
+color: #252625;
+}
+.inquiry_item2{
+  padding-bottom: 6%;
+  max-width: 600px;
+  border-radius: 10px;
+  color: #bcc1bc;
+  border: solid #bcc1bc;
+  background-color: #ffffff;
+}
+h2{
+  color: #bcc1bc;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+h2 span{
+  text-align: center;
+  border: none;
+  background-color: #252625;
+  padding: 40px 160px;
+  border-radius: 100px;
+  letter-spacing: ;
+}
+
+footer ul{
+  display: flex;
+  justify-content: center;
+  gap: 98px;
+  padding-bottom: 10%;
+  font-size: 20px;
+}
+.copy{
+  text-align: center;
+  padding-bottom: 10%;
+  font-size: 16px;
+}
