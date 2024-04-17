@@ -2,10 +2,11 @@
 img{
   width: 100%;
 }
-body{
-  background-image:;
+#header {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
 }
-
 .logo{
   width: 200px;
   padding-left: 80px;
@@ -22,35 +23,63 @@ max-width: 1366px;
   gap: 92px;
   padding-top: 120px;
 }
-.pass1 .pass2{
+.pass1 {
   width: 1390px;
+}
+.pass2{
+  width: 1390px;
+  padding-bottom: 95px;
 }
 .welcome{
   width: 435px;
 }
 .ayaoomine{
-  width: 775px;
+  width: 773px;
+  position: relative;
+  top: 100px;
+  left: 150px;
 }
-#about,#works{
-  padding-left: 110px;
+#about{
+  max-width: 1100px;
+  margin: 0 auto;
 }
-
+.about_inner{
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 70px;
+  padding-bottom: 265px;
+}
 .about_item{
   display: flex;
 }
-hr{
-  border-radius: 5px;
-  width: 160px;
-  background-color: #252625;
-  padding-top: 3px
+#AYAOOMINE{
+  position: relative;
+}
+.welcome{
+  position: absolute;
+  content: "";
+  top: 430px;
+  left: 60px;
 }
 h2{
   padding-bottom: 28px;
   font-size: 65px;
+  position: relative;
 }
-h3{
+.about_h2::before{
+  position: absolute;
+  content:"";
+  width: 160px;
+  height: 3px;
+  background-color: #252625;
+  border-radius: 5px;
+  top: -12px;
+}
+h2 span{
+  display: block;
   font-size: 30px;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
 p{
   color: #252625;
@@ -69,11 +98,14 @@ p{
   padding-bottom: 33px;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
-.myprofile,.viewmore{
-  width: 15%
+
+#works{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 325px;
 }
-.works{
-  width: 370px;
+#works li{
+  width: 30%;
 }
 #works ul{
   display: flex;
@@ -81,26 +113,32 @@ p{
   text-align: center;
   gap: 50px;
   padding-top: 45px;
+  padding-bottom: 100px;
+  justify-content: space-between;
 }
 .works_text{
   text-align: left;
   padding: 10px;
 }
-#contact{
+.contact_inner{
   background-color: #ff801e;
   color: #ffff;
   text-align: center;
-  width: 1055px;
+  max-width: 1055px;
   border-radius: 10px;
+  margin: 0 auto;
+  padding: 100px 0 147px 0;
+}
+#contact{
+  padding: 0 16px;
 }
 .contact_item{
   text-align: center;
 }
-.line {
-  border-radius: 5px;
-  width: 160px;
-  background-color: #ffffff;
-  padding-top: 3px
+.contact_button{
+  display: block;
+  width: 215px;
+  margin-left: auto;
 }
 .contact{
   font-size: 65px;
@@ -109,20 +147,220 @@ p{
   color: #ffffff;
   font-size: 16px;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
-  padding-bottom: 333px;
+  padding-bottom: 72px;
 }
 .button{
   border: #ffffff;
 }
 .button_text{
+  display: block;
+  width: 465px;
+  height: 105px;
+  border: 3px solid #ffffff;
+  border-radius: 105px;
   color: #ffffff;
   font-size: 41px;
+  text-align: center;
+  line-height: 105px;
+  margin: 0 auto;
 }
 #footer{
   display: flex;
+  align-items: end;
+  max-width: 1100px;
+  margin: 235px auto;
 }
 .copyright{
   text-align: left;
   color: #252625;
   font-size: 16px;
 }
+#footer.logo{
+  width: 112px;
+  padding: 0;
+}
+
+
+/* プロフィール */
+h1{
+  font-size: 48px;
+  padding-left: 180px;
+  margin-top: -600px;
+  letter-spacing: 0.3em;
+  line-height: 1.5;
+}
+.profile_name{
+  font-size: 20px;
+  padding-left: 180px;
+  padding-bottom: 125px;
+  letter-spacing: 0.6em;
+}
+.title{
+  font-size: 44px;
+  padding-left: 505px;
+  padding-bottom: 60px;
+  line-height: 2.2;
+  letter-spacing: 130;
+}
+.profile_text{
+  font-size: 18px;
+  padding-left: 505px;
+  padding-bottom: 100px;
+  line-height: 2;
+}
+#history{
+  padding: 86px;
+}
+.history{
+  width: 15%;
+}
+#history h3{
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+#history p{
+  font-size: 16px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+.history_item{
+  padding-top: 85px;
+  padding-bottom: 85px;
+  line-height: 1.5;
+}
+
+.history_second{
+  padding-bottom: 155px;
+  line-height: 1.5;
+}
+
+#profile_inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+#favorite{
+  position: relative;
+}
+.favorite_inner{
+  display: flex;
+  justify-content: end;
+}
+.favorite{
+  width: 260px;
+  position: absolute;
+  left: 0;
+  top: 46px;
+}
+.favorite h4{
+  padding: 20px 0;
+  text-align: center;
+}
+#favorite ul{
+  border: 3px solid #252625;
+  border-radius: 10px;
+  width: calc(100%-221px);
+  padding: 43px 0 43px 52px;
+}
+
+h4{
+  border: solid;
+  background-color: #252625;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 200px 20px 200px;
+  color: #bfc4bf;
+}
+.skill,.strengths{
+  width: 45%;
+}
+.skill_item li{
+  display: flex;
+  padding: 8px;
+}
+.strengths_item li{
+  display: flex;
+  padding: 8px;
+}
+.strengths_item li span{
+  padding-right: 16px;
+}
+.favorite span{
+  padding: 20px 80px;
+}
+.favorite_item{
+  border: solid;
+  border-color: #252625;
+  height: 7px;
+}
+#favorite{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.favorite_text{
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  line-height: 2;
+}
+.favorite_text_small{
+  font-size: 16px;
+}
+
+
+
+/* ワークス１ */
+.designcafe_img{
+  width: 90%;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  }
+  #designcafe h2{
+    padding-left: 133px;
+    padding-bottom: 120px;
+    font-size: 35px;
+  }
+  .design{
+    padding-bottom: 40px;
+    padding-left: 133px;
+  }
+  .item{
+    padding-left: 133px;
+    padding-bottom: 10px;
+  }
+  .design_text{
+    max-width: 530px;
+  }
+  .workstext_inner h3{
+    padding-bottom: 10%;
+  }
+  .text_list{
+    padding-left: 53%;
+  }
+  #designcafe p{
+    padding-bottom: 120px;
+    line-height: 2;
+  }
+  .designcafe_pic{
+    width: 90%;
+    padding-left: 150px;
+    padding-top: 105px;
+  }
+#works_text{
+  display: flex;
+  gap: 70px;
+  padding-left: 10%;
+}
+  
+  #footer ul{
+    display: flex;
+    text-align: center;
+    gap: 98px;
+    padding-bottom: 140px;
+  }
+  .copy{
+    text-align: center;
+    padding-bottom: 100px;
+  }
