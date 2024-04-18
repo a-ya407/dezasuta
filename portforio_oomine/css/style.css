@@ -348,19 +348,101 @@ h4{
     padding-left: 150px;
     padding-top: 105px;
   }
+  .backtoindex_botton{
+    display: block;
+    width: 215px;
+    margin-right: auto;
+  }
 #works_text{
   display: flex;
   gap: 70px;
   padding-left: 10%;
 }
-  
-  #footer ul{
-    display: flex;
-    text-align: center;
-    gap: 98px;
-    padding-bottom: 140px;
-  }
-  .copy{
-    text-align: center;
-    padding-bottom: 100px;
-  }
+footer ul{
+  display: flex;
+  justify-content: center;
+  gap: 98px;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  font-size: 20px;
+
+}
+.copy{
+  text-align: center;
+  padding-bottom: 10%;
+  font-size: 16px;
+}
+  /* コンタクト */
+.contact_area{
+  width: 33%;
+  padding-top: 180px;
+  max-width: 1366px;
+}
+.line{
+  height: 18px;
+  width: 474px;
+  background-color: #ff801e;
+}
+h1{
+  font-size: 36px;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  text-align: center;
+  color: #252625;
+}
+#contact_page p{
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 7%;
+  line-height: 1.7;
+  color: #252625;
+}
+#inquiry{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 175px;
+  gap: 3%;
+}
+
+.inquiry_item{
+padding-bottom: 6%;
+padding-left: 15%;
+color: #252625;
+}
+.inquiry_area{
+  padding-bottom: 6%;
+  max-width: 600px;
+  border-radius: 10px;
+  color: #bcc1bc;
+  border: solid #bcc1bc;
+  background-color: #ffffff;
+}
+.send{
+  color: #bcc1bc;
+  font-size: 25px;
+  text-align: center;
+}
+.send_button{
+  text-align: center;
+  border: none;
+  background-color: #252625;
+  border-radius: 100px;
+  width: 439px;
+  height: 130px;
+  line-height: 130px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer ul{
+  display: flex;
+  justify-content: center;
+  gap: 98px;
+  padding-bottom: 10%;
+  font-size: 20px;
+}
+.copy{
+  text-align: center;
+  padding-bottom: 10%;
+  font-size: 16px;
+}
