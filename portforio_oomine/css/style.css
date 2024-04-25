@@ -11,12 +11,11 @@ img{
   width: 200px;
   padding-left: 80px;
   padding-top: 83px;
-  padding-bottom: 250px;
 }
 .header_nav { 
 display: flex;
 justify-content: space-between;
-max-width: 1366px;
+max-width: 100%;
 }
 .header_nav ul{
   display: flex;
@@ -24,20 +23,24 @@ max-width: 1366px;
   padding-top: 120px;
 }
 .pass1 {
-  width: 1390px;
+  width: 100%;
 }
 .pass2{
-  width: 1390px;
+  width: 100%;
   padding-bottom: 95px;
 }
 .welcome{
-  width: 435px;
+  width: 31.9%;
 }
 .ayaoomine{
-  width: 773px;
+  width: 56.8%;
   position: relative;
-  top: 100px;
+  top: 60px;
   left: 150px;
+}
+.AYAOOMINE__img{
+  position: relative;
+  height: 450px;
 }
 #about{
   max-width: 1100px;
@@ -47,11 +50,12 @@ max-width: 1366px;
   display: flex;
   max-width: 1100px;
   margin: 0 auto;
-  gap: 70px;
+  gap: 60px;
   padding-bottom: 265px;
 }
 .about_item{
   display: flex;
+  width: 45.5%;
 }
 #AYAOOMINE{
   position: relative;
@@ -59,10 +63,10 @@ max-width: 1366px;
 .welcome{
   position: absolute;
   content: "";
-  top: 430px;
+  top: -100px;
   left: 60px;
 }
-h2{
+.about_h2{
   padding-bottom: 28px;
   font-size: 65px;
   position: relative;
@@ -81,8 +85,11 @@ h2 span{
   font-size: 30px;
   font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
-p{
+.profile_item p{
   color: #252625;
+  font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
 }
 .profile{
   width: 275px
@@ -135,6 +142,17 @@ p{
 .contact_item{
   text-align: center;
 }
+.contact_h2::before{
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .contact_button{
   display: block;
   width: 215px;
@@ -164,9 +182,9 @@ p{
   line-height: 105px;
   margin: 0 auto;
 }
-#footer{
+#first_footer{
   display: flex;
-  align-items: end;
+  align-items: baseline;
   max-width: 1100px;
   margin: 235px auto;
 }
@@ -182,16 +200,18 @@ p{
 
 
 /* プロフィール */
-h1{
+#profile img{
+  position: absolute;
+}
+#profile h1{
   font-size: 48px;
-  padding-left: 180px;
-  margin-top: -600px;
+  padding-left: 15.5%;
   letter-spacing: 0.3em;
   line-height: 1.5;
 }
 .profile_name{
   font-size: 20px;
-  padding-left: 180px;
+  padding-left: 15.5%;
   padding-bottom: 125px;
   letter-spacing: 0.6em;
 }
@@ -222,6 +242,7 @@ h1{
 #history p{
   font-size: 16px;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  line-height: 2em;
 }
 .history_item{
   padding-top: 85px;
@@ -247,6 +268,7 @@ h1{
 .favorite_inner{
   display: flex;
   justify-content: end;
+  padding-bottom: 60px;
 }
 .favorite{
   width: 260px;
@@ -261,7 +283,7 @@ h1{
 #favorite ul{
   border: 3px solid #252625;
   border-radius: 10px;
-  width: calc(100%-221px);
+  width: calc(100% - 221px);
   padding: 43px 0 43px 52px;
 }
 
@@ -282,7 +304,7 @@ h4{
 }
 .strengths_item li{
   display: flex;
-  padding: 8px;
+  padding: 16px;
 }
 .strengths_item li span{
   padding-right: 16px;
@@ -308,42 +330,82 @@ h4{
 .favorite_text_small{
   font-size: 16px;
 }
+.footer_img{
+  position: absolute;
+}
+.profile_copy{
+  text-align: center;
+}
 
 
 
-/* ワークス１ */
-.designcafe_img{
-  width: 90%;
-  padding-left: 100px;
-  padding-bottom: 100px;
-  }
-  #designcafe h2{
-    padding-left: 133px;
-    padding-bottom: 120px;
+/* ワークスページ */
+.works_page img{
+  padding-left: 10%;
+  width: 23%;
+}
+#header ul{
+  padding-right: 10%;
+}
+.works_img img{
+  width: 60%;
+  padding-left: 15%;
+  padding-top: 93px;
+}
+  #works_area h2{
+    padding-left: 12%;
+    padding-top: 300px;
+    padding-bottom: 95px;
     font-size: 35px;
+  }
+  .pc_img img{
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 90px;
+  }
+  .banner img{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 90px;
+  }
+  .life_hair_design img{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
   }
   .design{
     padding-bottom: 40px;
     padding-left: 133px;
   }
   .item{
-    padding-left: 133px;
     padding-bottom: 10px;
   }
-  .design_text{
+  .works_inner_text{
     max-width: 530px;
+    line-height: 1.7em;
+
+  }
+  .workstext_inner{
+    border-right: 1px #252625 solid;
+    padding-right: 5%;
   }
   .workstext_inner h3{
-    padding-bottom: 10%;
+    padding-bottom: 20px;
+  }
+  .workstext_list{
+    padding-left: 5%;
   }
   .text_list{
-    padding-left: 53%;
+    padding-left: 3%;
+    padding-bottom: 30px;
   }
-  #designcafe p{
+  #works_area p{
     padding-bottom: 120px;
     line-height: 2;
   }
-  .designcafe_pic{
+  .works_pic{
     width: 90%;
     padding-left: 150px;
     padding-top: 105px;
@@ -352,11 +414,16 @@ h4{
     display: block;
     width: 215px;
     margin-right: auto;
+    padding-left: 50px;
   }
 #works_text{
   display: flex;
-  gap: 70px;
-  padding-left: 10%;
+  /* gap: 50px; */
+  padding-left: 12%;
+  padding-bottom: 100px;
+}
+.workstext_list{
+  width: 35%;
 }
 footer ul{
   display: flex;
@@ -376,14 +443,15 @@ footer ul{
 .contact_area{
   width: 33%;
   padding-top: 180px;
-  max-width: 1366px;
+  margin: 0 auto;
 }
 .line{
   height: 18px;
   width: 474px;
   background-color: #ff801e;
+  margin: 0 auto;
 }
-h1{
+#contact_page h1{
   font-size: 36px;
   padding-top: 6%;
   padding-bottom: 6%;
@@ -445,4 +513,17 @@ footer ul{
   text-align: center;
   padding-bottom: 10%;
   font-size: 16px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 767px){
+  .about_inner{
+    display: none;
+  }
+.about_inner_sp{
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
 }
